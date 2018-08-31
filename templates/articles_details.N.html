@@ -1,0 +1,165 @@
+{%load static %}
+
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.8.1, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="{% static 'assets/images/alather-128x72-2.png'%}" type="image/x-icon">
+  <meta name="description" content="Web Builder Description">
+  <title>article</title>
+  <link rel="stylesheet" href="{% static 'assets/web/assets/mobirise-icons/mobirise-icons.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/tether/tether.min.css'%}">
+  <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css'%}">
+  <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-grid.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-reboot.min.css'%}">
+  <link rel="stylesheet" href="{% static 'assets/dropdown/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/socicon/css/styles.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/animatecss/animate.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/theme/css/style.css' %}">
+  <link href="{% static 'assets/fonts/style.css'%}" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'assets/mobirise/css/mbr-additional.css' %}" type="text/css">
+  
+  
+  
+</head>
+<body>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+  <section class="menu cid-r0NgX4QVah" once="menu" id="menu2-1k">
+
+    
+
+    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm bg-color transparent">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <div class="menu-logo">
+                <div class="navbar-brand">
+                    <span class="navbar-logo">
+                        <a href="{% url 'home'%}">
+                            <img src="{% static 'assets/images/alather-122x69.png' %}" alt="Mobirise" title="" style="height: 3.8rem;">
+                        </a>
+                    </span>
+                    
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item">
+                        <a class="nav-link link text-success display-5" href="{% url 'home' %}"><span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>
+                            الرئيسية</a>
+                    </li><li class="nav-item"><a class="nav-link link text-success display-5" href="{% url 'articles-list' %}"><span class="mbri-cust-feedback mbr-iconfont mbr-iconfont-btn"></span>
+                            المقالات</a></li><li class="nav-item"><a class="nav-link link text-success display-5" href="{% url 'home' %}"><span class="mbri-users mbr-iconfont mbr-iconfont-btn"></span>من نحن</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link link text-success display-5" href="{% url 'home' %}"><span class="mbri-letter mbr-iconfont mbr-iconfont-btn"></span>
+                            تواصل معنا</a>
+                    </li></ul>
+                
+            </div>
+    
+    </nav>
+</section>
+
+<section class="engine"><a href="https://mobiri.se/p">web templates free download</a></section><section class="mbr-section content5 cid-r0NpPoZhqQ mbr-parallax-background" id="content5-1m">
+
+    
+
+    <div class="mbr-overlay" style="opacity: 0.1; background-color: rgb(35, 35, 35);">
+    </div>
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center mbr-bold mbr-white pb-3 mbr-fonts-style display-5"><br>إن الدين ليس بديلاً من العلم والحضارة. ولا عدواً للعلم والحضارة. إنما هو <br>إطار للعلم والحضارة، ومحور للعلم والحضارة، ومنهج للعلم والحضارة في حدود إطاره ومحوره الذي يحكم كل شئون الحياة</h2>
+                <h3 class="mbr-section-subtitle align-center mbr-light mbr-white pb-3 mbr-fonts-style display-2">سيد قطب إبراهيم حسين الشاذلي<br>كاتب وأديب ومنظر إسلامي مصري</h3>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-r0NsHtic2C" id="content1-1o">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">
+                <h1 style="text-align: center;padding-bottom:35px;direction:rtl;color:#f1c40f">{{articleN.title|safe}}</h1>
+                <img src="{{articleN.picture.url}}" width="100%">
+                <p style="text-align: center;padding-top:30px;direction:rtl;color:#485460">{{articleN.body|safe}}</p>
+                <p  style="text-align: center">{{articleN.date}}</p>  
+                <div class="fb-like" data-href="{{ articleN.get_absolute_uri}}" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>  
+                <div class="fb-comments" data-href="{{ articleN.get_absolute_uri}}"  data-width="100%" data-numposts="5"></div>      
+   
+            </div>
+        </div>
+    </div>
+</section>
+<section class="cid-r0I15RJs3a" id="social-buttons2-v">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="col-md-8 align-center">
+                <h2 class="pb-3 mbr-fonts-style display-2">&nbsp;تبعونا على مواقع التواصل</h2>
+                <div class="social-list pl-0 mb-0">
+                    <a href="https://www.youtube.com/channel/UCp4jFEhtoFc0kEKHIlRpWkA" target="_blank">
+                        <span class="px-2 mbr-iconfont mbr-iconfont-social socicon-youtube socicon"></span>
+                    </a>
+                    <a href="https://www.facebook.com/ALATHeer-249565305686278" target="_blank">
+                        <span class="px-2 socicon-facebook socicon mbr-iconfont mbr-iconfont-social"></span>
+                    </a>
+                    <a href="https://www.instagram.com/alatheer_insta/" target="_blank">
+                        <span class="px-2 socicon-instagram socicon mbr-iconfont mbr-iconfont-social"></span>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCp4jFEhtoFc0kEKHIlRpWkA" target="_blank">
+                        
+                    </a>
+                    <a href="https://plus.google.com/u/0/+Mobirise" target="_blank">
+                        
+                    </a>
+                    <a href="https://www.behance.net/Mobirise" target="_blank">
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="{% static 'assets/web/assets/jquery/jquery.min.js'%}"></script>
+  <script src="{% static 'assets/popper/popper.min.js' %}"></script>
+  <script src="{% static 'assets/tether/tether.min.js' %}"></script>
+  <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'assets/smoothscroll/smooth-scroll.js' %}"></script>
+  <script src="{% static 'assets/dropdown/js/script.min.js' %}"></script>
+  <script src="{% static 'assets/viewportchecker/jquery.viewportchecker.js'%}"></script>
+  <script src="{% static 'assets/parallax/jarallax.min.js'%}"></script>
+  <script src="{% static 'assets/sociallikes/social-likes.js'%}"></script>
+  <script src="{% static 'assets/touchswipe/jquery.touch-swipe.min.js' %}"></script>
+  <script src="{% static 'assets/theme/js/script.js' %}"></script>
+  
+  
+ <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i></i></a></div>
+    <input name="animation" type="hidden">
+  </body>
+</html>
