@@ -25,7 +25,7 @@ SECRET_KEY = 'irun#-pyqojlakys69=_bp(-n*2zox-9r5v79+vg7=+pr516t!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['alatheeir.herokuapp.com','127.0.0.1']
 
 
 # Application definition
